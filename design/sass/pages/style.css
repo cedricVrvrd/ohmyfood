@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+#hero #restaurauntsExploration, #fonctionnement .stepNumberContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero button {
+  border-radius: 50px;
+  padding: 20px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-box-shadow: 5px 8px 5px #d3d3d3;
+          box-shadow: 5px 8px 5px #d3d3d3;
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.titre {
+  font-family: 'Shrikhand';
+}
+
+h1 {
+  font-family: 'Shrikhand';
+  text-align: center;
+  margin: 5px 0;
+}
+
+#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+#hero h2 {
+  padding: 0 70px 0 70px;
+  margin-bottom: 0;
+}
+
+#hero p {
+  margin-top: 0;
+}
+
+#hero #location {
+  text-align: center;
+  background-color: #eaeaea;
+  -webkit-box-shadow: inset 0px 5px 2px #d3d3d3;
+          box-shadow: inset 0px 5px 2px #d3d3d3;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#hero .fa-location-dot {
+  margin-left: -30px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#hero #restaurauntsExploration {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#fonctionnement {
+  width: 85%;
+  margin: auto;
+}
+
+#fonctionnement .stepNumberContainer {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#fonctionnement .stepNumberContainer .stepNumber {
+  position: relative;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 5;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 5px 5px 10px #d3d3d3;
+          box-shadow: 5px 5px 10px #d3d3d3;
+}
+
+#fonctionnement .stepNumberContainer h2 {
+  font-weight: bolder;
+}
+
+#fonctionnement .stepNumberContainer .number {
+  position: absolute;
+  left: -9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #9356DC;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  color: white;
+  font-weight: 100;
+}
+
+#fonctionnement .stepNumberContainer .fa-mobile-screen, #fonctionnement .stepNumberContainer .fa-list, #fonctionnement .stepNumberContainer .fa-store {
+  color: gray;
+  padding: 0 25px;
+  width: 62px;
+}
+
+#fonctionnement .stepNumberContainer .fa-store {
+  color: #9356DC;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+  padding: 30px 0 30px 0;
+}
+
+#restaurants h2 {
+  margin-left: 20px;
+}
+
+#restaurants .listeRestoContainer {
+  width: 90%;
+  margin: auto;
+}
+
+#restaurants .listeRestoContainer .restoCard {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#restaurants .listeRestoContainer .restoCard .imageResto {
+  position: relative;
+}
+
+#restaurants .listeRestoContainer .restoCard img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#restaurants .listeRestoContainer .restoCard .new {
+  background-color: #99e2d0;
+  color: #0e8f6f;
+  position: absolute;
+  font-weight: 600;
+  font-size: 14px;
+  right: 7%;
+  top: 10%;
+  padding: 8px;
+}
+
+#restaurants .listeRestoContainer .restoCard .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 0 10px;
+  height: 60px;
+  font-size: 15px;
+}
+
+#restaurants .listeRestoContainer .restoCard .caption h3 {
+  margin: 0;
+}
+
+#restaurants .listeRestoContainer .restoCard .caption p {
+  margin: 0;
+}
+
+#restaurants .listeRestoContainer .restoCard .caption .fa-heart {
+  font-size: 20px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: #262323;
+  color: #f6f6f6;
+  padding: 10px 10px 20px 10px;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f6f6f6;
+  margin-bottom: 5px;
+}
+
+footer .fa-utensils, footer .fa-handshake-angle {
+  width: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
