@@ -4,3 +4,11 @@ body{
     background-color: $background;
 }
 
+h1{
+    @extend %header;
+}
+
+footer{
+    @extend %footer;
+}
+

@@ -1,5 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+h1 {
+  font-family: 'Shrikhand';
+  text-align: center;
+  margin: 5px 0;
+  position: relative;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: #262323;
+  color: #f6f6f6;
+  padding: 10px 10px 20px 10px;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f6f6f6;
+  margin-bottom: 5px;
+}
+
+footer .fa-utensils, footer .fa-handshake-angle {
+  width: 20px;
+  text-align: center;
+}
+
 #hero #restaurauntsExploration, #fonctionnement .stepNumberContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,12 +74,6 @@ body {
 
 .titre {
   font-family: 'Shrikhand';
-}
-
-h1 {
-  font-family: 'Shrikhand';
-  text-align: center;
-  margin: 5px 0;
 }
 
 #hero {
@@ -223,34 +253,5 @@ h1 {
 
 #restaurants .listeRestoContainer .restoCard .caption .fa-heart {
   font-size: 20px;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  background-color: #262323;
-  color: #f6f6f6;
-  padding: 10px 10px 20px 10px;
-  font-size: 12px;
-}
-
-footer a {
-  text-decoration: none;
-  color: #f6f6f6;
-  margin-bottom: 5px;
-}
-
-footer .fa-utensils, footer .fa-handshake-angle {
-  width: 20px;
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,44 @@ $background : #f6f6f6;
 $couleurbackgrNouveau : #99e2d0;
 $couleurEcritureNouveau : #0e8f6f;
 
+%header{
+    font-family: 'Shrikhand';
+    text-align: center;
+    margin: 5px 0;
+    position: relative;
+}
+%lienVersAcceuil{
+    header{
+        position: relative;
+        .fa-arrow-left{
+            position: absolute;
+            top : 25%;
+            left : 30px
+        }
+    }
+
+}
+
+%footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: #262323;
+    color: $background;
+    padding: 10px 10px 20px 10px;
+    font-size: 12px;
+    a{
+        text-decoration: none;
+        color: $background;
+        margin-bottom: 5px;
+    }
+    .fa-utensils, .fa-handshake-angle{
+        width: 20px;
+        text-align: center;
+    }
+}
+
 %flexColumnCenter {
     display: flex;
     flex-direction: column;
