@@ -7,14 +7,22 @@ $thirdColor : #99E2D0;
 $background : #f6f6f6;
 $couleurbackgrNouveau : #99e2d0;
 $couleurEcritureNouveau : #0e8f6f;
+$ecritureTitre : 'Shrikhand';
+$ecriturePrincipal : 'Roboto';
+
+%body{
+    font-family: $ecriturePrincipal;
+    margin: 0;
+}
 
 %header{
-    font-family: 'Shrikhand';
+    font-family: $ecritureTitre;
     text-align: center;
     margin: 5px 0 0 0;
     position: relative;
     h1{
         margin: 0;
+        font-weight: 100;
     }
     a{
         text-decoration: none;

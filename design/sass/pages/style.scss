@@ -4,8 +4,7 @@
 
 // GENERAL
 body {
-    font-family: 'Roboto';
-    margin: 0;
+    @extend %body;
 }
 
 * {
@@ -13,7 +12,7 @@ body {
 }
 
 .titre {
-    font-family: 'Shrikhand';
+    font-family: $ecritureTitre;
 }
 
 header {
