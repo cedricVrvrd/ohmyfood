@@ -1,10 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-h1 {
+header {
   font-family: 'Shrikhand';
   text-align: center;
-  margin: 5px 0;
+  margin: 5px 0 0 0;
   position: relative;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+header .fa-arrow-left {
+  position: absolute;
+  top: 25%;
+  left: 30px;
 }
 
 footer {
@@ -38,5 +54,22 @@ footer .fa-utensils, footer .fa-handshake-angle {
 
 body {
   background-color: #f6f6f6;
+}
+
+#imageResto {
+  height: 200px;
+  width: 100%;
+}
+
+#imageResto img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#lesMenus {
+  background-color: red;
+  height: 550px;
 }
 /*# sourceMappingURL=menu.css.map */

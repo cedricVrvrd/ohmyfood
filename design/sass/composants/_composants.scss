@@ -11,19 +11,21 @@ $couleurEcritureNouveau : #0e8f6f;
 %header{
     font-family: 'Shrikhand';
     text-align: center;
-    margin: 5px 0;
+    margin: 5px 0 0 0;
     position: relative;
-}
-%lienVersAcceuil{
-    header{
-        position: relative;
-        .fa-arrow-left{
-            position: absolute;
-            top : 25%;
-            left : 30px
-        }
+    h1{
+        margin: 0;
     }
-
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+    .fa-arrow-left{
+        position: absolute;
+        top : 25%;
+        left : 30px
+    }
 }
 
 %footer{
