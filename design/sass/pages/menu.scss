@@ -1,28 +1,35 @@
 @import '../composants/composants';
 
-body{
+body {
     @extend %body;
 }
+
 // titre et fleche retour
-header{
+header {
     @extend %header;
 }
+
+* {
+    box-sizing: border-box;
+}
+
 .titre {
     font-family: $ecritureTitre;
 }
 
 // image du restaurant
-#imageResto{
+#imageResto {
     height: 200px;
     width: 100%;
-    img{
+
+    img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
 }
 
-#lesMenus{
+#lesMenus {
     border-radius: 35px 35px 0 0;
     margin-top: -30px;
     z-index: 6;
@@ -30,48 +37,98 @@ header{
     background-color: $background;
     height: 550px;
     padding: auto;
-    .nomResto{
+
+    .nomResto {
         padding-top: 10px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        h2{
+
+        h2 {
             font-weight: 100;
         }
-    }
-    .platWrapper{
-        @extend %flexColumnCenter;
-        .typePlat{
-            
+
+        .fa-heart {
+            font-size: 22px;
         }
-        .descriptionWrapper{
+    }
+
+    .platWrapper {
+        @extend %flexColumnCenter;
+
+        .typePlat {
+            width: 95%;
+            justify-content: flex-start;
+            text-transform: uppercase;
+            h2{
+                margin-bottom: 5px;
+                font-weight: 100;
+                font-size: 16px;
+}
+            }
+        }
+        .traitVert{
+            width: 15%;
+            height: 4px;
+            background-color: #99e2d0;
+        }
+        .descriptionWrapper {
+            margin-top: 10px;
             background-color: white;
             width: 95%;
             overflow: hidden;
             display: flex;
             justify-content: space-between;
-            transition-duration: 2000ms;
-                .descriptionPlat{
-                    width: 60%;
+            padding: 7px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px #d3d3d3;
+
+            .descriptionPlat {
+                width: 60%;
+                min-width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                h3 {
+                    margin: 0;
                 }
-                .prixPlat{
-                    width: 20%;
+
+                p {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin: 0;
                 }
-                .animationPlat{
-                    display: none;
-                    width: 20%;
+            }
+            
+            .prixPlat {
+                width: 20%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                p {
+                    margin: 0;
                 }
-            &:hover .animationPlat{
+            }
+
+            .animationPlat {
+                display: none;
+                width: 20%;
+            }
+
+            &:hover .animationPlat {
                 display: block;
             }
         }
     }
-    
+
 }
 
 
 
-footer{
+footer {
     @extend %footer;
 }
-

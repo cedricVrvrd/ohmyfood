@@ -42,14 +42,14 @@ footer {
   -ms-flex-line-pack: start;
       align-content: flex-start;
   background-color: #262323;
-  color: #f6f6f6;
+  color: #f0f0f0;
   padding: 10px 10px 20px 10px;
   font-size: 12px;
 }
 
 footer a {
   text-decoration: none;
-  color: #f6f6f6;
+  color: #f0f0f0;
   margin-bottom: 5px;
 }
 
@@ -69,6 +69,11 @@ footer .fa-utensils, footer .fa-handshake-angle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .titre {
@@ -92,7 +97,7 @@ footer .fa-utensils, footer .fa-handshake-angle {
   margin-top: -30px;
   z-index: 6;
   position: relative;
-  background-color: #f6f6f6;
+  background-color: #f0f0f0;
   height: 550px;
   padding: auto;
 }
@@ -113,7 +118,30 @@ footer .fa-utensils, footer .fa-handshake-angle {
   font-weight: 100;
 }
 
+#lesMenus .nomResto .fa-heart {
+  font-size: 22px;
+}
+
+#lesMenus .platWrapper .typePlat {
+  width: 95%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-transform: uppercase;
+}
+
+#lesMenus .platWrapper .typePlat h2 {
+  margin-bottom: 5px;
+}
+
+#lesMenus .platWrapper .traitVert {
+  width: 15%;
+  height: 4px;
+  background-color: #99e2d0;
+}
+
 #lesMenus .platWrapper .descriptionWrapper {
+  margin-top: 10px;
   background-color: white;
   width: 95%;
   overflow: hidden;
@@ -123,16 +151,56 @@ footer .fa-utensils, footer .fa-handshake-angle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
+  padding: 7px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 10px #d3d3d3;
+          box-shadow: 5px 5px 10px #d3d3d3;
 }
 
 #lesMenus .platWrapper .descriptionWrapper .descriptionPlat {
   width: 60%;
+  min-width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#lesMenus .platWrapper .descriptionWrapper .descriptionPlat h3 {
+  margin: 0;
+}
+
+#lesMenus .platWrapper .descriptionWrapper .descriptionPlat p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
 }
 
 #lesMenus .platWrapper .descriptionWrapper .prixPlat {
   width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#lesMenus .platWrapper .descriptionWrapper .prixPlat p {
+  margin: 0;
 }
 
 #lesMenus .platWrapper .descriptionWrapper .animationPlat {
