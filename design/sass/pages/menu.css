@@ -132,18 +132,21 @@ footer .fa-utensils, footer .fa-handshake-angle {
 
 #lesMenus .platWrapper .typePlat h2 {
   margin-bottom: 5px;
+  font-weight: 100;
+  font-size: 16px;
 }
 
-#lesMenus .platWrapper .traitVert {
-  width: 15%;
+#lesMenus .traitVert {
+  width: 35px;
   height: 4px;
   background-color: #99e2d0;
 }
 
-#lesMenus .platWrapper .descriptionWrapper {
+#lesMenus .descriptionWrapper {
   margin-top: 10px;
   background-color: white;
   width: 95%;
+  height: 70px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,13 +154,12 @@ footer .fa-utensils, footer .fa-handshake-angle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 7px;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 10px #d3d3d3;
           box-shadow: 5px 5px 10px #d3d3d3;
 }
 
-#lesMenus .platWrapper .descriptionWrapper .descriptionPlat {
+#lesMenus .descriptionWrapper .descriptionPlat {
   width: 60%;
   min-width: 30%;
   display: -webkit-box;
@@ -171,18 +173,18 @@ footer .fa-utensils, footer .fa-handshake-angle {
       justify-content: space-around;
 }
 
-#lesMenus .platWrapper .descriptionWrapper .descriptionPlat h3 {
+#lesMenus .descriptionWrapper .descriptionPlat h3 {
   margin: 0;
 }
 
-#lesMenus .platWrapper .descriptionWrapper .descriptionPlat p {
+#lesMenus .descriptionWrapper .descriptionPlat p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
 }
 
-#lesMenus .platWrapper .descriptionWrapper .prixPlat {
+#lesMenus .descriptionWrapper .prixPlat {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,16 +201,13 @@ footer .fa-utensils, footer .fa-handshake-angle {
           justify-content: flex-end;
 }
 
-#lesMenus .platWrapper .descriptionWrapper .prixPlat p {
-  margin: 0;
-}
-
-#lesMenus .platWrapper .descriptionWrapper .animationPlat {
+#lesMenus .descriptionWrapper .animationPlat {
   display: none;
   width: 20%;
+  background-color: #99e2d0;
 }
 
-#lesMenus .platWrapper .descriptionWrapper:hover .animationPlat {
+#lesMenus .descriptionWrapper:hover .animationPlat {
   display: block;
 }
 /*# sourceMappingURL=menu.css.map */

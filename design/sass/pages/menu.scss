@@ -68,7 +68,7 @@ header {
             }
         }
         .traitVert{
-            width: 15%;
+            width: 35px;
             height: 4px;
             background-color: #99e2d0;
         }
@@ -76,10 +76,10 @@ header {
             margin-top: 10px;
             background-color: white;
             width: 95%;
+            height: 70px;
             overflow: hidden;
             display: flex;
             justify-content: space-between;
-            padding: 7px;
             border-radius: 15px;
             box-shadow: 5px 5px 10px #d3d3d3;
 
@@ -108,15 +108,12 @@ header {
                 align-items: center;
                 flex-direction: column;
                 justify-content: flex-end;
-
-                p {
-                    margin: 0;
-                }
             }
 
             .animationPlat {
                 display: none;
                 width: 20%;
+                background-color: $couleurbackgrNouveau;
             }
 
             &:hover .animationPlat {
@@ -125,7 +122,6 @@ header {
         }
     }
 
-}
 
 
 
