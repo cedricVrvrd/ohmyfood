@@ -7,10 +7,13 @@ body{
 header{
     @extend %header;
 }
+.titre {
+    font-family: $ecritureTitre;
+}
 
 // image du restaurant
 #imageResto{
-    height: 320px;
+    height: 200px;
     width: 100%;
     img{
         height: 100%;
@@ -24,9 +27,48 @@ header{
     margin-top: -30px;
     z-index: 6;
     position: relative;
-    background-color: red;
-    height: 550px
+    background-color: $background;
+    height: 550px;
+    padding: auto;
+    .nomResto{
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        h2{
+            font-weight: 100;
+        }
+    }
+    .platWrapper{
+        @extend %flexColumnCenter;
+        .typePlat{
+            
+        }
+        .descriptionWrapper{
+            background-color: white;
+            width: 95%;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            transition-duration: 2000ms;
+                .descriptionPlat{
+                    width: 60%;
+                }
+                .prixPlat{
+                    width: 20%;
+                }
+                .animationPlat{
+                    display: none;
+                    width: 20%;
+                }
+            &:hover .animationPlat{
+                display: block;
+            }
+        }
+    }
+    
 }
+
 
 
 footer{

@@ -58,8 +58,25 @@ footer .fa-utensils, footer .fa-handshake-angle {
   text-align: center;
 }
 
+#lesMenus .platWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titre {
+  font-family: "Shrikhand";
+}
+
 #imageResto {
-  height: 320px;
+  height: 200px;
   width: 100%;
 }
 
@@ -75,7 +92,55 @@ footer .fa-utensils, footer .fa-handshake-angle {
   margin-top: -30px;
   z-index: 6;
   position: relative;
-  background-color: red;
+  background-color: #f6f6f6;
   height: 550px;
+  padding: auto;
+}
+
+#lesMenus .nomResto {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#lesMenus .nomResto h2 {
+  font-weight: 100;
+}
+
+#lesMenus .platWrapper .descriptionWrapper {
+  background-color: white;
+  width: 95%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+}
+
+#lesMenus .platWrapper .descriptionWrapper .descriptionPlat {
+  width: 60%;
+}
+
+#lesMenus .platWrapper .descriptionWrapper .prixPlat {
+  width: 20%;
+}
+
+#lesMenus .platWrapper .descriptionWrapper .animationPlat {
+  display: none;
+  width: 20%;
+}
+
+#lesMenus .platWrapper .descriptionWrapper:hover .animationPlat {
+  display: block;
 }
 /*# sourceMappingURL=menu.css.map */
