@@ -171,6 +171,17 @@ footer .fa-utensils, footer .fa-handshake-angle {
   margin-right: -300px;
   width: 20%;
   background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
 
 .descriptionWrapper .fa-circle-check {
@@ -206,8 +217,8 @@ footer .fa-utensils, footer .fa-handshake-angle {
 
 @-webkit-keyframes menuUp {
   from {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
     opacity: 0%;
   }
   to {
@@ -219,8 +230,8 @@ footer .fa-utensils, footer .fa-handshake-angle {
 
 @keyframes menuUp {
   from {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
     opacity: 0%;
   }
   to {
@@ -257,7 +268,6 @@ footer .fa-utensils, footer .fa-handshake-angle {
   z-index: 6;
   position: relative;
   background-color: #f0f0f0;
-  padding: auto;
 }
 
 #lesMenus .nomResto {
@@ -280,7 +290,59 @@ footer .fa-utensils, footer .fa-handshake-angle {
   font-size: 22px;
 }
 
+.platWrapper_Entrée :nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.platWrapper_Entrée :nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.platWrapper_Entrée :nth-child(4) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
 footer {
   position: relative;
+}
+
+.fa-stack {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fa-stack .fa-regular {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.fa-stack .fa-solid {
+  font-size: 16px;
+  background: -webkit-linear-gradient(top, red 30%, blue 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.fa-stack:hover .fa-solid {
+  z-index: 1000;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 /*# sourceMappingURL=menu.css.map */
