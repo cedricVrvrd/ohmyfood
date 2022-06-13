@@ -280,21 +280,6 @@ footer .fa-utensils, footer .fa-handshake-angle {
   font-size: 22px;
 }
 
-.platWrapper_Entrée:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.platWrapper_Entrée:nth-child(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.platWrapper_Entrée:nth-child(2) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
 footer {
   position: relative;
 }
