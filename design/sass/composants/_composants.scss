@@ -9,6 +9,8 @@ $couleurbackgrNouveau : #99e2d0;
 $couleurEcritureNouveau : #0e8f6f;
 $ecritureTitre : 'Shrikhand';
 $ecriturePrincipal : 'Roboto';
+$buttonBoxShadowColor : #d3d3d3;
+$buttonBoxShadowColorDarken : darken(#d3d3d3,20%);
 
 %body{
     font-family: $ecriturePrincipal;
@@ -69,6 +71,114 @@ $ecriturePrincipal : 'Roboto';
     color: white;
     font-size: 14px;
     font-weight: 600;
-    box-shadow: 5px 8px 5px #d3d3d3;
+    box-shadow: 5px 8px 5px $buttonBoxShadowColor;
+    &:hover{
+        filter: brightness(1.03);
+        box-shadow: 5px 8px 5px $buttonBoxShadowColorDarken;   
+    }
 
+}
+
+%cardPlat{
+    @extend %flexColumnCenter;
+    width: 100%;
+
+    .typePlat {
+        width: 90%;
+        text-transform: uppercase;
+
+        h2 {
+            margin-bottom: 5px;
+            font-weight: 100;
+            font-size: 16px;
+        }
+    }
+}
+
+.traitVert {
+    width: 35px;
+    height: 4px;
+    background-color: #99e2d0;
+}
+
+.descriptionWrapper {
+    width: 90%;
+    margin-top: 10px;
+    background-color: white;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #d3d3d3;
+    cursor: pointer;
+    animation: menuUp 1s forwards;
+    .descriptionPlat {
+        width: 100%;
+        display: flex;
+        align-content: space-around;
+        flex-wrap: nowrap;
+
+        .intitulePlat {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-left: 10px;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0;
+        }
+    }
+
+    .prixPlat {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 8px;
+    }
+
+    .animationPlat {
+        margin-right: -300px;
+        width: 20%;
+        background-color: $couleurbackgrNouveau;
+    }
+
+    .fa-circle-check {
+        color: white;
+        font-size: 2.1em;
+        transform: rotate(0turn);
+    }
+
+    &:hover .animationPlat {
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 1s;
+    }
+    &:hover .fa-circle-check{
+        transform: rotate(-1turn);
+        transition: transform 1s ease-in-out;
+    }
+}
+@keyframes menuUp{
+    from{
+        transform: translateY(10px);
+        opacity : 0%;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
 }
