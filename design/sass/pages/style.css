@@ -399,8 +399,8 @@ footer .fa-handshake-angle {
           flex-direction: column;
   background-color: white;
   z-index: 3000;
-  -webkit-animation: fadeInContainerLoader 5s forwards;
-          animation: fadeInContainerLoader 5s forwards;
+  -webkit-animation: fadeInContainerLoader 4s forwards;
+          animation: fadeInContainerLoader 4s forwards;
 }
 
 #loaderContainer .loader {
@@ -448,8 +448,8 @@ footer .fa-handshake-angle {
 #loaderContainer .textLoader span:nth-child(2) {
   position: absolute;
   opacity: 0;
-  -webkit-animation: fadeIn 1s backwards;
-          animation: fadeIn 1s backwards;
+  -webkit-animation: fadeIn 700ms backwards;
+          animation: fadeIn 700ms backwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -459,8 +459,8 @@ footer .fa-handshake-angle {
   opacity: 0;
   -webkit-animation: fadeIn 1s backwards;
           animation: fadeIn 1s backwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 #hero {
