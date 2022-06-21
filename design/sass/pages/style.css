@@ -53,7 +53,8 @@ footer a {
   margin-bottom: 5px;
 }
 
-footer .fa-utensils, footer .fa-handshake-angle {
+footer .fa-utensils,
+footer .fa-handshake-angle {
   width: 20px;
   text-align: center;
 }
@@ -219,6 +220,45 @@ footer .fa-utensils, footer .fa-handshake-angle {
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
+#restaurants .listeRestoContainer .restoCard .caption .fa-stack {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#restaurants .listeRestoContainer .restoCard .caption .fa-stack .fa-regular {
+  font-size: 20px;
+  position: absolute;
+}
+
+#restaurants .listeRestoContainer .restoCard .caption .fa-stack .fa-solid {
+  width: 0;
+  height: 0;
+  position: absolute;
+  font-size: 21px;
+  color: transparent;
+}
+
+#restaurants .listeRestoContainer .restoCard .caption .fa-stack:hover .fa-solid {
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
 @-webkit-keyframes menuUp {
   from {
     -webkit-transform: translateY(15px);
@@ -243,104 +283,6 @@ footer .fa-utensils, footer .fa-handshake-angle {
             transform: translateY(0px);
     opacity: 100%;
   }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.titre {
-  font-family: "Shrikhand";
-}
-
-#loaderContainer {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: white;
-  z-index: 3000;
-  -webkit-animation: fadeInContainerLoader 13s forwards;
-          animation: fadeInContainerLoader 13s forwards;
-}
-
-#loaderContainer .loader {
-  border: 16px solid #9356DC;
-  /* Light grey */
-  border-top: 16px solid #FF79DA;
-  /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-}
-
-#loaderContainer .textLoader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-  font-size: 22px;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: relative;
-  width: 350px;
-  height: 50px;
-}
-
-#loaderContainer .textLoader span {
-  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-#loaderContainer .textLoader span:nth-child(1) {
-  position: absolute;
-  -webkit-animation: fadeOut 4s forwards;
-          animation: fadeOut 4s forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-#loaderContainer .textLoader span:nth-child(2) {
-  position: absolute;
-  opacity: 0;
-  -webkit-animation: fadeIn 3s backwards;
-          animation: fadeIn 3s backwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-#loaderContainer .textLoader span:nth-child(3) {
-  position: absolute;
-  opacity: 0;
-  -webkit-animation: fadeIn 3s backwards;
-          animation: fadeIn 3s backwards;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
 }
 
 @-webkit-keyframes fadeInContainerLoader {
@@ -425,6 +367,100 @@ footer .fa-utensils, footer .fa-handshake-angle {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.titre {
+  font-family: "Shrikhand";
+}
+
+#loaderContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  z-index: 3000;
+  -webkit-animation: fadeInContainerLoader 5s forwards;
+          animation: fadeInContainerLoader 5s forwards;
+}
+
+#loaderContainer .loader {
+  border: 16px solid #9356DC;
+  border-top: 16px solid #FF79DA;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+#loaderContainer .textLoader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  width: 350px;
+  height: 50px;
+}
+
+#loaderContainer .textLoader span {
+  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#loaderContainer .textLoader span:nth-child(1) {
+  position: absolute;
+  -webkit-animation: fadeOut 1s forwards;
+          animation: fadeOut 1s forwards;
+}
+
+#loaderContainer .textLoader span:nth-child(2) {
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: fadeIn 1s backwards;
+          animation: fadeIn 1s backwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#loaderContainer .textLoader span:nth-child(3) {
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: fadeIn 1s backwards;
+          animation: fadeIn 1s backwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 #hero {
@@ -525,7 +561,9 @@ footer .fa-utensils, footer .fa-handshake-angle {
   font-weight: 100;
 }
 
-#fonctionnement .stepNumberContainer .fa-mobile-screen, #fonctionnement .stepNumberContainer .fa-list, #fonctionnement .stepNumberContainer .fa-store {
+#fonctionnement .stepNumberContainer .fa-mobile-screen,
+#fonctionnement .stepNumberContainer .fa-list,
+#fonctionnement .stepNumberContainer .fa-store {
   color: gray;
   padding: 0 25px;
   width: 62px;
@@ -547,6 +585,11 @@ footer .fa-utensils, footer .fa-handshake-angle {
 #restaurants .listeRestoContainer {
   width: 90%;
   margin: auto;
+}
+
+#restaurants .listeRestoContainer a {
+  text-decoration: none;
+  color: black;
 }
 
 #restaurants .listeRestoContainer .restoCard {
@@ -602,7 +645,7 @@ footer .fa-utensils, footer .fa-handshake-angle {
   margin: 0;
 }
 
-#restaurants .listeRestoContainer .restoCard .caption .fa-heart {
+#restaurants .listeRestoContainer .restoCard .caption .fa-stack {
   font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
