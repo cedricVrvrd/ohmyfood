@@ -81,7 +81,7 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
     box-shadow: 5px 8px 5px $buttonBoxShadowColor;
 
     &:hover {
-        filter: brightness(1.03);
+        filter: brightness(1.06);
         box-shadow: 5px 8px 5px $buttonBoxShadowColorDarken;
     }
 

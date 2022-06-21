@@ -76,11 +76,15 @@ header {
     @extend %cardPlat
 }
 
+button{
+    margin: 30px 0 30px 0;
+    @extend %boutonColore
+}
+
 footer {
     position: relative;
     @extend %footer;
 }
-
 
 .fa-stack {
    @extend %coeurAnime;
