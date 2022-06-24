@@ -121,7 +121,20 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
     box-shadow: 5px 5px 10px #d3d3d3;
     cursor: pointer;
     animation: menuUp 1s forwards;
+    &:nth-child(2) {
+        animation-delay: 0.2s;
+    }
 
+    &:nth-child(3) {
+        animation-delay: 0.5s;
+    }
+
+    &:nth-child(4) {
+        animation-delay: 0.7s;
+    }
+    &:nth-child(5) {
+        animation-delay: 0.9s;
+    }
     .descriptionPlat {
         width: 100%;
         display: flex;
@@ -279,3 +292,4 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
         transform: rotate(360deg);
     }
 }
+

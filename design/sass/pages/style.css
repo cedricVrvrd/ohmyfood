@@ -118,6 +118,26 @@ footer .fa-handshake-angle {
           animation: menuUp 1s forwards;
 }
 
+.descriptionWrapper:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.descriptionWrapper:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.descriptionWrapper:nth-child(4) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.descriptionWrapper:nth-child(5) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
 .descriptionWrapper .descriptionPlat {
   width: 100%;
   display: -webkit-box;

@@ -134,6 +134,26 @@ button:hover {
           animation: menuUp 1s forwards;
 }
 
+.descriptionWrapper:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.descriptionWrapper:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.descriptionWrapper:nth-child(4) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.descriptionWrapper:nth-child(5) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
 .descriptionWrapper .descriptionPlat {
   width: 100%;
   display: -webkit-box;
@@ -436,51 +456,6 @@ button:hover {
 
 #lesMenus .nomResto .fa-heart {
   font-size: 22px;
-}
-
-.platWrapper_Entrée :nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.platWrapper_Entrée :nth-child(3) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.platWrapper_Entrée :nth-child(4) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.platWrapper_Plat :nth-child(2) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.platWrapper_Plat :nth-child(3) {
-  -webkit-animation-delay: 1100ms;
-          animation-delay: 1100ms;
-}
-
-.platWrapper_Plat :nth-child(4) {
-  -webkit-animation-delay: 1300ms;
-          animation-delay: 1300ms;
-}
-
-.platWrapper_Dessert :nth-child(2) {
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-}
-
-.platWrapper_Dessert :nth-child(3) {
-  -webkit-animation-delay: 1600ms;
-          animation-delay: 1600ms;
-}
-
-.platWrapper_Dessert :nth-child(4) {
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
 }
 
 button {
