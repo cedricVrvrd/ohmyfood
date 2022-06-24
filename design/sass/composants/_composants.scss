@@ -138,6 +138,9 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
 
         h3 {
             margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         p {
@@ -155,6 +158,7 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
         flex-direction: column;
         justify-content: flex-end;
         padding-bottom: 8px;
+        font-weight: 800;
     }
 
     .animationPlat {

@@ -67,13 +67,35 @@ header {
         animation-delay: 0.7s;
     }
 }
-
-.platWrapper_Plat {
+.platWrapper_Plat{
     @extend %cardPlat;
+
+    :nth-child(2) {
+        animation-delay: 0.9s;
+    }
+
+    :nth-child(3) {
+        animation-delay: 1100ms;
+    }
+
+    :nth-child(4) {
+        animation-delay: 1300ms;
+    }
 }
 
 .platWrapper_Dessert {
-    @extend %cardPlat
+    @extend %cardPlat;
+    :nth-child(2) {
+        animation-delay: 1500ms;
+    }
+
+    :nth-child(3) {
+        animation-delay: 1600ms;
+    }
+
+    :nth-child(4) {
+        animation-delay: 1800ms;
+    }
 }
 
 button{
