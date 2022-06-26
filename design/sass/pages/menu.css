@@ -108,13 +108,13 @@ button:hover {
   font-size: 16px;
 }
 
-.traitVert {
+.platWrapper_Entrée .traitVert, .platWrapper_Plat .traitVert, .platWrapper_Dessert .traitVert {
   width: 35px;
   height: 4px;
   background-color: #99e2d0;
 }
 
-.descriptionWrapper {
+.platWrapper_Entrée .descriptionWrapper, .platWrapper_Plat .descriptionWrapper, .platWrapper_Dessert .descriptionWrapper {
   width: 90%;
   margin-top: 10px;
   background-color: white;
@@ -134,27 +134,27 @@ button:hover {
           animation: menuUp 1s forwards;
 }
 
-.descriptionWrapper:nth-child(2) {
+.platWrapper_Entrée .descriptionWrapper:nth-child(2), .platWrapper_Plat .descriptionWrapper:nth-child(2), .platWrapper_Dessert .descriptionWrapper:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.descriptionWrapper:nth-child(3) {
+.platWrapper_Entrée .descriptionWrapper:nth-child(3), .platWrapper_Plat .descriptionWrapper:nth-child(3), .platWrapper_Dessert .descriptionWrapper:nth-child(3) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.descriptionWrapper:nth-child(4) {
+.platWrapper_Entrée .descriptionWrapper:nth-child(4), .platWrapper_Plat .descriptionWrapper:nth-child(4), .platWrapper_Dessert .descriptionWrapper:nth-child(4) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
-.descriptionWrapper:nth-child(5) {
+.platWrapper_Entrée .descriptionWrapper:nth-child(5), .platWrapper_Plat .descriptionWrapper:nth-child(5), .platWrapper_Dessert .descriptionWrapper:nth-child(5) {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
 
-.descriptionWrapper .descriptionPlat {
+.platWrapper_Entrée .descriptionWrapper .descriptionPlat, .platWrapper_Plat .descriptionWrapper .descriptionPlat, .platWrapper_Dessert .descriptionWrapper .descriptionPlat {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +165,7 @@ button:hover {
       flex-wrap: nowrap;
 }
 
-.descriptionWrapper .descriptionPlat .intitulePlat {
+.platWrapper_Entrée .descriptionWrapper .descriptionPlat .intitulePlat, .platWrapper_Plat .descriptionWrapper .descriptionPlat .intitulePlat, .platWrapper_Dessert .descriptionWrapper .descriptionPlat .intitulePlat {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,21 +179,21 @@ button:hover {
   padding-left: 10px;
 }
 
-.descriptionWrapper .descriptionPlat h3 {
+.platWrapper_Entrée .descriptionWrapper .descriptionPlat h3, .platWrapper_Plat .descriptionWrapper .descriptionPlat h3, .platWrapper_Dessert .descriptionWrapper .descriptionPlat h3 {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.descriptionWrapper .descriptionPlat p {
+.platWrapper_Entrée .descriptionWrapper .descriptionPlat p, .platWrapper_Plat .descriptionWrapper .descriptionPlat p, .platWrapper_Dessert .descriptionWrapper .descriptionPlat p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
 }
 
-.descriptionWrapper .prixPlat {
+.platWrapper_Entrée .descriptionWrapper .prixPlat, .platWrapper_Plat .descriptionWrapper .prixPlat, .platWrapper_Dessert .descriptionWrapper .prixPlat {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,7 +212,7 @@ button:hover {
   font-weight: 800;
 }
 
-.descriptionWrapper .animationPlat {
+.platWrapper_Entrée .descriptionWrapper .animationPlat, .platWrapper_Plat .descriptionWrapper .animationPlat, .platWrapper_Dessert .descriptionWrapper .animationPlat {
   margin-right: -300px;
   width: 20%;
   background-color: #99e2d0;
@@ -229,14 +229,14 @@ button:hover {
   transition: all 1.5s;
 }
 
-.descriptionWrapper .fa-circle-check {
+.platWrapper_Entrée .descriptionWrapper .fa-circle-check, .platWrapper_Plat .descriptionWrapper .fa-circle-check, .platWrapper_Dessert .descriptionWrapper .fa-circle-check {
   color: white;
   font-size: 2.1em;
   -webkit-transform: rotate(0turn);
           transform: rotate(0turn);
 }
 
-.descriptionWrapper:hover .animationPlat {
+.platWrapper_Entrée .descriptionWrapper:hover .animationPlat, .platWrapper_Plat .descriptionWrapper:hover .animationPlat, .platWrapper_Dessert .descriptionWrapper:hover .animationPlat {
   margin-right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,7 +251,7 @@ button:hover {
           transition-duration: 1s;
 }
 
-.descriptionWrapper:hover .fa-circle-check {
+.platWrapper_Entrée .descriptionWrapper:hover .fa-circle-check, .platWrapper_Plat .descriptionWrapper:hover .fa-circle-check, .platWrapper_Dessert .descriptionWrapper:hover .fa-circle-check {
   -webkit-transform: rotate(-1turn);
           transform: rotate(-1turn);
   -webkit-transition: -webkit-transform 1s ease-in-out;

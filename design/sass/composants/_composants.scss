@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
+// mise en place des differentes variables
 $primaryColor : #9356DC;
 $secondaryColor : #FF79DA;
 $thirdColor : #99E2D0;
@@ -12,11 +13,13 @@ $ecriturePrincipal : 'Roboto';
 $buttonBoxShadowColor : #d3d3d3;
 $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
 
+// body
 %body {
     font-family: $ecriturePrincipal;
     margin: 0;
 }
 
+// comosant du header
 %header {
     font-family: $ecritureTitre;
     text-align: center;
@@ -41,6 +44,7 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
     }
 }
 
+//  composants du footer
 %footer {
     display: flex;
     flex-direction: column;
@@ -64,12 +68,14 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
     }
 }
 
+// composant flex center
 %flexColumnCenter {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+// bouton coloré explorer nos restaurants et commander
 %boutonColore {
     border-radius: 50px;
     padding: 20px;
@@ -87,6 +93,7 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
 
 }
 
+// composant des la mise en forme des menu 
 %cardPlat {
     @extend %flexColumnCenter;
     width: 100%;
@@ -101,142 +108,145 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
             font-size: 16px;
         }
     }
-}
-
-.traitVert {
-    width: 35px;
-    height: 4px;
-    background-color: #99e2d0;
-}
-
-.descriptionWrapper {
-    width: 90%;
-    margin-top: 10px;
-    background-color: white;
-    height: 70px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px #d3d3d3;
-    cursor: pointer;
-    animation: menuUp 1s forwards;
-    &:nth-child(2) {
-        animation-delay: 0.2s;
+    .traitVert {
+        width: 35px;
+        height: 4px;
+        background-color: #99e2d0;
     }
 
-    &:nth-child(3) {
-        animation-delay: 0.5s;
-    }
-
-    &:nth-child(4) {
-        animation-delay: 0.7s;
-    }
-    &:nth-child(5) {
-        animation-delay: 0.9s;
-    }
-    .descriptionPlat {
-        width: 100%;
+    .descriptionWrapper {
+        width: 90%;
+        margin-top: 10px;
+        background-color: white;
+        height: 70px;
+        overflow: hidden;
         display: flex;
-        align-content: space-around;
-        flex-wrap: nowrap;
+        justify-content: space-between;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px #d3d3d3;
+        cursor: pointer;
+        animation: menuUp 1s forwards;
 
-        .intitulePlat {
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding-left: 10px;
+        &:nth-child(2) {
+            animation-delay: 0.2s;
         }
 
-        h3 {
-            margin: 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        &:nth-child(3) {
+            animation-delay: 0.5s;
         }
 
-        p {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin: 0;
+        &:nth-child(4) {
+            animation-delay: 0.7s;
         }
-    }
 
-    .prixPlat {
-        width: 20%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-bottom: 8px;
-        font-weight: 800;
-    }
-
-    .animationPlat {
-        margin-right: -300px;
-        width: 20%;
-        background-color: $couleurbackgrNouveau;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 1.5s;
-    }
-
-    .fa-circle-check {
-        color: white;
-        font-size: 2.1em;
-        transform: rotate(0turn);
-    }
-
-    &:hover .animationPlat {
-        margin-right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition-duration: 1s;
-    }
-
-    &:hover .fa-circle-check {
-        transform: rotate(-1turn);
-        transition: transform 1s ease-in-out;
-    }
-}
-
-%coeurAnime{
-        width: 25px;
-        height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    
-        .fa-regular {
-            font-size: 20px;
-            position: absolute;
+        &:nth-child(5) {
+            animation-delay: 0.9s;
         }
-    
-        .fa-solid {
-            width: 0;
-            height: 0;
-            position: absolute;
-            font-size: 21px;
-            color: transparent;
-        }
-    
-        &:hover .fa-solid {
+
+        .descriptionPlat {
             width: 100%;
-            height: 100%;
-            background: -webkit-linear-gradient(45deg, $secondaryColor 40%, $primaryColor);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            transition: 500ms;
+            display: flex;
+            align-content: space-around;
+            flex-wrap: nowrap;
+
+            .intitulePlat {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-left: 10px;
+            }
+
+            h3 {
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0;
+            }
+        }
+
+        .prixPlat {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .animationPlat {
+            margin-right: -300px;
+            width: 20%;
+            background-color: $couleurbackgrNouveau;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1.5s;
+        }
+
+        .fa-circle-check {
+            color: white;
+            font-size: 2.1em;
+            transform: rotate(0turn);
+        }
+
+        &:hover .animationPlat {
+            margin-right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 1s;
+        }
+
+        &:hover .fa-circle-check {
+            transform: rotate(-1turn);
+            transition: transform 1s ease-in-out;
         }
     }
+}
 
+//  coeur anime au remplissage
+%coeurAnime {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
+    .fa-regular {
+        font-size: 20px;
+        position: absolute;
+    }
+
+    .fa-solid {
+        width: 0;
+        height: 0;
+        position: absolute;
+        font-size: 21px;
+        color: transparent;
+    }
+
+    &:hover .fa-solid {
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(45deg, $secondaryColor 40%, $primaryColor);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: 500ms;
+    }
+}
+
+// animation pour donner l'effet blur et montant au menu
 @keyframes menuUp {
     from {
         transform: translateY(15px);
@@ -248,6 +258,7 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
         opacity: 100%;
     }
 }
+// animation pour l'apparation progressive du loader
 @keyframes fadeInContainerLoader {
     0% {
         opacity: 1;
@@ -262,7 +273,7 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
         visibility: hidden
     }
 }
-
+// fade in pour le texte
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -272,7 +283,7 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
         opacity: 1;
     }
 }
-
+// fade out pour le text
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -282,7 +293,7 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
         opacity: 0;
     }
 }
-
+//  fais tourner le loader
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -292,4 +303,3 @@ $buttonBoxShadowColorDarken : darken(#d3d3d3, 20%);
         transform: rotate(360deg);
     }
 }
-

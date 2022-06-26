@@ -14,7 +14,7 @@ body {
 .titre {
     font-family: $ecritureTitre;
 }
-
+// mise en place du loader
 #loaderContainer {
     position: fixed;
     width: 100%;
@@ -56,7 +56,7 @@ body {
             -webkit-background-clip: text;
             color: transparent;
         }
-
+// decalge de l'animation sur les enfants
         span:nth-child(1) {
             position: absolute;
             animation: fadeOut 1s forwards;
@@ -126,7 +126,7 @@ header {
         @extend %boutonColore;
     }
 }
-
+// partie fonctionnement du site
 #fonctionnement {
     width: 85%;
     margin: auto;
@@ -181,7 +181,7 @@ header {
         }
     }
 }
-
+// liste des restaurants
 #restaurants {
     background-color: $background;
     padding: 30px 0 30px 0;
