@@ -1,4 +1,5 @@
-@media screen and (min-width: 992px) {
+@charset "UTF-8";
+@media screen and (min-width: 768px) {
   #fonctionnement {
     width: 95%;
     margin-top: 50px;
@@ -40,6 +41,36 @@
   }
   #restaurants .listeRestoContainer a {
     width: 45%;
+  }
+  #imageResto {
+    height: 270px;
+  }
+  #lesMenus {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nomResto {
+    width: 100%;
+  }
+  .platWrapper_Entrée {
+    width: 33%;
+  }
+  .platWrapper_Plat {
+    width: 33%;
+  }
+  .platWrapper_Dessert {
+    width: 33%;
+  }
+  .bouton {
+    width: 100%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

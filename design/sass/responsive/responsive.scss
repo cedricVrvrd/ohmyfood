@@ -1,4 +1,5 @@
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+  // page d'acceuil
   #fonctionnement{
     width: 95%;
     margin-top: 50px;
@@ -30,5 +31,31 @@
       }
     }
   }
- 
+
+  // Pages de menus
+#imageResto{
+  height: 270px;
+}
+#lesMenus{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  .nomResto{
+    width: 100%;
+  }
+  .platWrapper_Entrée {
+    width: 33%;
+  }
+  .platWrapper_Plat{
+    width: 33%;
+  }
+  .platWrapper_Dessert {
+    width: 33%;
+  }
+  .bouton{
+    width: 100%;
+    text-align: center;
+  }
 }

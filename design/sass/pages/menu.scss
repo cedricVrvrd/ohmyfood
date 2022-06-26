@@ -63,8 +63,11 @@ header {
 .platWrapper_Dessert {
     @extend %cardPlat;
 }
-
+.bouton{
+    text-align: center;
+}
 button{
+    
     margin: 30px 0 30px 0;
     @extend %boutonColore
 }

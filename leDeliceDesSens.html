@@ -9,10 +9,12 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="design/sass/pages/menu.css">
+    <link rel="stylesheet" href="design/sass/responsive/responsive.css">
     <title>Le Délice des sens</title>
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <h1>ohmyfood</h1>
@@ -21,7 +23,7 @@
         <section id="imageResto">
             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat du restaurant">
         </section>
-
+        <!-- mise en place de la section menu -->
         <section id="lesMenus">
             <div class="nomResto">
                 <h2 class="titre">Le délice des sens</h2>
@@ -30,6 +32,7 @@
                     <i class="fa-solid fa-heart fa-stack fa-inverse"></i>
                 </div>
             </div>
+            <!-- les entrees -->
             <div class="platWrapper_Entrée">
                 <div class="typePlat">
                     <h2>Entrées</h2>
@@ -80,7 +83,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- les plats -->
             <div class="platWrapper_Plat">
                 <div class="typePlat">
                     <h2>Plats</h2>
@@ -130,71 +133,74 @@
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </div>
-
-                <div class="platWrapper_Dessert">
-                    <div class="typePlat">
-                        <h2>Desserts</h2>
-                        <div class="traitVert"></div>
-                    </div>
-                    <div class="descriptionWrapper">
-                        <div class="descriptionPlat">
-                            <div class="intitulePlat">
-                                <h3>Farandole de desserts</h3>
-                                <p>Du chef</p>
-                            </div>
-                            <div class="prixPlat">
-                                18€
-                            </div>
+            </div>
+            <!-- les desserts -->
+            <div class="platWrapper_Dessert">
+                <div class="typePlat">
+                    <h2>Desserts</h2>
+                    <div class="traitVert"></div>
+                </div>
+                <div class="descriptionWrapper">
+                    <div class="descriptionPlat">
+                        <div class="intitulePlat">
+                            <h3>Farandole de desserts</h3>
+                            <p>Du chef</p>
                         </div>
-                        <div class="animationPlat">
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="prixPlat">
+                            18€
                         </div>
                     </div>
+                    <div class="animationPlat">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
 
-                    <div class="descriptionWrapper">
-                        <div class="descriptionPlat">
-                            <div class="intitulePlat">
-                                <h3>Crème brulée </h3>
-                                <p>Revisitée</p>
-                            </div>
-                            <div class="prixPlat">
-                                22€
-                            </div>
+                <div class="descriptionWrapper">
+                    <div class="descriptionPlat">
+                        <div class="intitulePlat">
+                            <h3>Crème brulée </h3>
+                            <p>Revisitée</p>
                         </div>
-                        <div class="animationPlat">
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="prixPlat">
+                            22€
                         </div>
                     </div>
+                    <div class="animationPlat">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
 
-                    <div class="descriptionWrapper">
-                        <div class="descriptionPlat">
-                            <div class="intitulePlat">
-                                <h3>Tiramisu </h3>
-                                <p>À la noisette</p>
-                            </div>
-                            <div class="prixPlat">
-                                23€
-                            </div>
+                <div class="descriptionWrapper">
+                    <div class="descriptionPlat">
+                        <div class="intitulePlat">
+                            <h3>Tiramisu </h3>
+                            <p>À la noisette</p>
                         </div>
-                        <div class="animationPlat">
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="prixPlat">
+                            23€
                         </div>
                     </div>
+                    <div class="animationPlat">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+            </div>
 
 
-
-                    <button>
-                            commander
-                        </button>
+            <div class="bouton">
+                <button>
+                    commander
+                </button>
+            </div>
         </section>
-
     </main>
+
     <footer>
         <h3 class="titre">OhmyFood</h3>
         <a href="#"><i class="fa-solid fa-utensils"></i> Proposez un restaurant</a>
         <a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
         <a href="#">Mentions Légales</a>
-        <a href="#">Contact</a>
+        <a href="maito:ohmyfood@ohmyfood.fr">Contact</a>
     </footer>
 </body>
 
