@@ -205,7 +205,10 @@ header {
             border-radius: 15px;
             background-color: white;
             margin-bottom: 20px;
-
+            &:hover {
+                filter: brightness(1.06);
+                box-shadow: 5px 8px 5px $buttonBoxShadowColorDarken;
+            }
             .imageResto {
                 position: relative;
             }
