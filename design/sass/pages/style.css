@@ -76,8 +76,8 @@ footer .fa-handshake-angle {
   border-radius: 50px;
   padding: 20px;
   border: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9256dc));
+  background: linear-gradient(#FF79DA, #9256dc);
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -123,7 +123,7 @@ footer .fa-handshake-angle {
 #restaurants .listeRestoContainer .restoCard .caption .fa-stack:hover .fa-solid {
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9356DC);
+  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9256dc);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -276,7 +276,7 @@ footer .fa-handshake-angle {
 }
 
 #loaderContainer .loader {
-  border: 16px solid #9356DC;
+  border: 16px solid #9256dc;
   border-top: 16px solid #FF79DA;
   border-radius: 50%;
   width: 120px;
@@ -305,7 +305,7 @@ footer .fa-handshake-angle {
 }
 
 #loaderContainer .textLoader span {
-  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9356DC);
+  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9256dc);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -407,6 +407,12 @@ footer .fa-handshake-angle {
           box-shadow: 5px 5px 10px #d3d3d3;
 }
 
+#fonctionnement .stepNumberContainer .stepNumber:hover {
+  background-color: rgba(158, 94, 243, 0.15);
+  -webkit-box-shadow: 5px 5px 10px rgba(158, 94, 243, 0.3);
+          box-shadow: 5px 5px 10px rgba(158, 94, 243, 0.3);
+}
+
 #fonctionnement .stepNumberContainer h2 {
   font-weight: bolder;
 }
@@ -417,7 +423,7 @@ footer .fa-handshake-angle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #9356DC;
+  background: #9256dc;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -440,8 +446,16 @@ footer .fa-handshake-angle {
   width: 62px;
 }
 
-#fonctionnement .stepNumberContainer .fa-store {
-  color: #9356DC;
+#fonctionnement .stepNumberContainer:hover .fa-store {
+  color: #9256dc;
+}
+
+#fonctionnement .stepNumberContainer:hover .fa-list {
+  color: #9256dc;
+}
+
+#fonctionnement .stepNumberContainer:hover .fa-mobile-screen {
+  color: #9256dc;
 }
 
 #restaurants {
